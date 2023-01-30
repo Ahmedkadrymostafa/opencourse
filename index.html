@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./assets/icon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/all.min.css"> -->
+    <script src="https://kit.fontawesome.com/bfd8ea59d2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,900;1,300&family=Spectral:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/> -->
+</head>
+<body>
+    <!-- animation background  --> 
+        <div class="animation-background">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>   
+    <!-- animation background  -->
+
+<!-- start header  -->
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="./assets/newlogo.png" alt="">
+        </div>
+        <div class="btn-search-bar">
+            <div class="search-bar" id="search-bar">
+                <div class="search" id="search">
+                    <input type="text" name="search" id="search-input" placeholder="Find courses here">
+                    
+                    <label for="input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                </div>
+                
+                <div class="search-result">
+                    <ul>
+                        <li><a href="#">html course</a></li>
+                        <li><a href="#">html course</a></li>
+                        <li><a href="#">html course</a></li>
+                        <li><a href="#">html course</a></li>
+                        <li><a href="#">html course</a></li>
+                        <li><a href="#">html course</a></li>
+                        <li><a href="#">html course</a></li>
+                        <li><a href="#">html course</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search-dropdown" id="search-dropdown">
+                
+                <div class="dropdown" id="dropdown">
+                    <button onclick="handleDropdownClicked(event)" id="dropdown-button">
+                      categories
+                      <i id="dropdown-icon" class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <div class="menu">
+                      <a href="#">
+                        Programming
+                      </a>
+                      <a href="#">
+                        Languages
+                      </a>
+                      <a href="#">
+                        Design
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-icons">
+            <div class="burger-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="caret-down">
+                <i class="fa-solid fa-square-caret-down"></i>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- end header  -->
+<!-- start landing page  -->
+<div class="landing-page">
+    <div class="container">
+        <div class="details" data-aos="fade-right">
+            <h1>All courses in one place</h1>
+            <p>begin learning different fields and<br> acquiring new skills for free </br>with elite lecturers</p>
+            <p>Start learning now <br><hr></p>
+        </div>
+        <div class="wisdom-box">
+            <div class="wisdom">
+                <span><i class="fa-solid fa-quote-left"></i></span>
+                <p id="wisdom">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor </p>
+                <span><i class="fa-solid fa-quote-right"></i></span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end landing page  -->
+<!-- start categories section  -->
+<div class="categories">
+    <div class="main-heading">
+        <div class="heading-title">
+            <hr>
+            <p>categories</p>
+            <hr>
+        </div>
+    </div>
+    <div class="container">
+        <div class="first-section">
+            <div class="cards">
+                <a href="#" class="hero">
+                    <div class="sixth">
+                        <img class="hero-profile-img" src="https://cdn.gamer-network.net/2018/metabomb/leagueoflegendsbestcarrychampions2018pantheon.jpg" alt="">
+                        <div class="hero-description-bk"></div>
+                        <div class="hero-logo">
+                        <img src="https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557291375.3948_Dy2yZu_n.jpg" alt="">
+                        </div>
+                        <div class="hero-description">
+                        <p>programming</p>
+                        </div>
+                        <!-- <div  class="hero-date">
+                        <p>20.02.2019</p>
+                        </div> -->
+                        <div class="hero-btn">
+                            <p>begin learning</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="hero">
+                    <div class="sixth">
+                        <img class="hero-profile-img" src="https://i.pinimg.com/originals/9f/b1/ff/9fb1ffb05dd28039d1a06ad8e90cbd75.jpg" alt="">
+                        <div class="hero-description-bk"></div>
+                        <div class="hero-logo">
+                        <img src="https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557291375.3948_Dy2yZu_n.jpg" alt="">
+                        </div>
+                        <div class="hero-description">
+                        <p>programming</p>
+                        </div>
+                        <!-- <div  class="hero-date">
+                        <p>20.02.2019</p>
+                        </div> -->
+                        <div class="hero-btn">
+                            <p>begin learning</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" class="hero">
+                    <div class="sixth">
+                        <img class="hero-profile-img" src="https://cdn.gamer-network.net/2018/metabomb/leagueoflegendsbestcarrychampions2018pantheon.jpg" alt="">
+                        <div class="hero-description-bk"></div>
+                        <div class="hero-logo">
+                        <img src="https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557291375.3948_Dy2yZu_n.jpg" alt="">
+                        </div>
+                        <div class="hero-description">
+                        <p>programming</p>
+                        </div>
+                        <!-- <div  class="hero-date">
+                        <p>20.02.2019</p>
+                        </div> -->
+                        <div class="hero-btn">
+                            <p>begin learning</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="hero">
+                    <div class="sixth">
+                        <img class="hero-profile-img" src="https://i.pinimg.com/originals/9f/b1/ff/9fb1ffb05dd28039d1a06ad8e90cbd75.jpg" alt="">
+                        <div class="hero-description-bk"></div>
+                        <div class="hero-logo">
+                        <img src="https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557291375.3948_Dy2yZu_n.jpg" alt="">
+                        </div>
+                        <div class="hero-description">
+                        <p>programming</p>
+                        </div>
+                        <!-- <div  class="hero-date">
+                        <p>20.02.2019</p>
+                        </div> -->
+                        <div class="hero-btn">
+                            <p>begin learning</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#" class="hero">
+                    <div class="sixth">
+                        <img class="hero-profile-img" src="https://cdn.gamer-network.net/2018/metabomb/leagueoflegendsbestcarrychampions2018pantheon.jpg" alt="">
+                        <div class="hero-description-bk"></div>
+                        <div class="hero-logo">
+                        <img src="https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557291375.3948_Dy2yZu_n.jpg" alt="">
+                        </div>
+                        <div class="hero-description">
+                        <p>programming</p>
+                        </div>
+                        <!-- <div  class="hero-date">
+                        <p>20.02.2019</p>
+                        </div> -->
+                        <div class="hero-btn">
+                            <p>begin learning</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="hero">
+                    <div class="sixth">
+                        <img class="hero-profile-img" src="https://i.pinimg.com/originals/9f/b1/ff/9fb1ffb05dd28039d1a06ad8e90cbd75.jpg" alt="">
+                        <div class="hero-description-bk"></div>
+                        <div class="hero-logo">
+                        <img src="https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557291375.3948_Dy2yZu_n.jpg" alt="">
+                        </div>
+                        <div class="hero-description">
+                        <p>programming</p>
+                        </div>
+                        <!-- <div  class="hero-date">
+                        <p>20.02.2019</p>
+                        </div> -->
+                        <div class="hero-btn">
+                            <p>begin learning</p>
+                        </div>
+                    </div>
+                </a>
+                
+            
+            </div>
+        </div>
+        <div class="more" id="more">
+            <p>see more</p>
+        </div>
+        <div class="second-section">
+            <div class="cards">
+                <a href="#" class="hero">
+                    <div class="sixth">
+                        <img class="hero-profile-img" src="https://cdn.gamer-network.net/2018/metabomb/leagueoflegendsbestcarrychampions2018pantheon.jpg" alt="">
+                        <div class="hero-description-bk"></div>
+                        <div class="hero-logo">
+                        <img src="https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557291375.3948_Dy2yZu_n.jpg" alt="">
+                        </div>
+                        <div class="hero-description">
+                        <p>programming</p>
+                        </div>
+                        <!-- <div  class="hero-date">
+                        <p>20.02.2019</p>
+                        </div> -->
+                        <div class="hero-btn">
+                            <p>begin learning</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="hero">
+                    <div class="sixth">
+                        <img class="hero-profile-img" src="https://i.pinimg.com/originals/9f/b1/ff/9fb1ffb05dd28039d1a06ad8e90cbd75.jpg" alt="">
+                        <div class="hero-description-bk"></div>
+                        <div class="hero-logo">
+                        <img src="https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557291375.3948_Dy2yZu_n.jpg" alt="">
+                        </div>
+                        <div class="hero-description">
+                        <p>programming</p>
+                        </div>
+                        <!-- <div  class="hero-date">
+                        <p>20.02.2019</p>
+                        </div> -->
+                        <div class="hero-btn">
+                            <p>begin learning</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="hero">
+                    <div class="sixth">
+                        <img class="hero-profile-img" src="https://cdn.gamer-network.net/2018/metabomb/leagueoflegendsbestcarrychampions2018pantheon.jpg" alt="">
+                        <div class="hero-description-bk"></div>
+                        <div class="hero-logo">
+                        <img src="https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557291375.3948_Dy2yZu_n.jpg" alt="">
+                        </div>
+                        <div class="hero-description">
+                        <p>programming</p>
+                        </div>
+                        <!-- <div  class="hero-date">
+                        <p>20.02.2019</p>
+                        </div> -->
+                        <div class="hero-btn">
+                            <p>begin learning</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="hero">
+                    <div class="sixth">
+                        <img class="hero-profile-img" src="https://i.pinimg.com/originals/9f/b1/ff/9fb1ffb05dd28039d1a06ad8e90cbd75.jpg" alt="">
+                        <div class="hero-description-bk"></div>
+                        <div class="hero-logo">
+                        <img src="https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557291375.3948_Dy2yZu_n.jpg" alt="">
+                        </div>
+                        <div class="hero-description">
+                        <p>programming</p>
+                        </div>
+                        <!-- <div  class="hero-date">
+                        <p>20.02.2019</p>
+                        </div> -->
+                        <div class="hero-btn">
+                            <p>begin learning</p>
+                        </div>
+                    </div>
+                </a>
+                
+                
+            
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end categories section  -->
+<!-- start third section (special courses section) -->
+<div class="third-section">
+    <div class="container">
+        <div class="main-heading">
+            <div class="heading-title">
+                <hr>
+                <p>special</p>
+                <hr>
+            </div>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper">
+            <div class="swiper-wrapper" id="wrapper">
+                <div class="swiper-slide">
+                    <a href="#card">
+                        <div class="a-box">
+                            <div class="img-container">
+                              <div class="img-inner">                               
+                                <img src="./assets/python.png">                               
+                              </div>
+                            </div>
+                            <div class="text-container">
+                              <h3>Python</h3>
+                                <p>
+                                    This a demo experiment to skew image container. It looks good.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#card">
+                        <div class="a-box">
+                            <div class="img-container">
+                              <div class="img-inner">                               
+                                <img src="./assets/python.png">                               
+                              </div>
+                            </div>
+                            <div class="text-container">
+                              <h3>Python</h3>
+                                <p>
+                                    This a demo experiment to skew image container. It looks good.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#card">
+                        <div class="a-box">
+                            <div class="img-container">
+                              <div class="img-inner">                               
+                                <img src="./assets/python.png">                               
+                              </div>
+                            </div>
+                            <div class="text-container">
+                              <h3>Python</h3>
+                                <p>
+                                    This a demo experiment to skew image container. It looks good.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#card">
+                        <div class="a-box">
+                            <div class="img-container">
+                              <div class="img-inner">                               
+                                <img src="./assets/python.png">                               
+                              </div>
+                            </div>
+                            <div class="text-container">
+                              <h3>Python</h3>
+                                <p>
+                                    This a demo experiment to skew image container. It looks good.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-navigation">
+                <div class="prev"><i class="fa-solid fa-chevron-left"></i></div>
+                <div class="next"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end third section (special courses section) -->
+<!-- start footer  -->
+<footer>
+    <div class="container">
+        <div class="upper-content">
+            <div class="left-content">
+                <!-- <div class="footer-logo">
+                    <img src="./assets/newlogo.png" alt="logo">
+                </div> -->
+                <div class="about-info">
+                    <h3>about us</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima omnis, exercitationem excepturi ex fugiat expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui reprehenderit voluptatum, maiores doloribus illum saepe eius iure recusandae quaerat sint dolorem non perferendis molestiae culpa placeat voluptate voluptates adipisci. Illum!</p>
+                    <div class="short-links">
+                        <a href="#">privacy policy</a>
+                        <a href="#">terms</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-content">
+                <h3>contact us</h3>
+                <form action="">
+                    <input type="email" name="email" placeholder="Enter Your Email">
+                    <textarea name="message" id="message-area" placeholder="Type Your Messsage"></textarea>
+                    <input type="submit" id="submit" value="Send">
+                </form>
+            </div>
+        </div>
+        <div class="down-content">
+            <hr>
+            <div class="copy-right">
+                <p>&copy; all rights reserved at open course</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer  -->
+
+   
+    <!-- <script src="./js/all.min.js"></script> -->
+    <script src="./js/script.js"></script>
+    <script src="./js/swiper.js"></script>
+</body>
+</html>
+
+
+
+<!-- <div class="a-box swiper-slide">
+    <div class="img-container">
+      <div class="img-inner">
+            <div class="inner-skew">
+                <img src="https://images.unsplash.com/photo-1584791097929-aa825fe8e1e1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ">
+            </div>
+      </div>
+    </div>
+    <div class="text-container">
+      <h3>A blue bird</h3>
+        <div>
+            This a demo experiment to skew image container. It looks good.
+        </div>
+    </div>
+</div> -->
+
+<!-- <a href="#card">
+    <div class="a-box">
+        <div class="img-container">
+          <div class="img-inner">                               
+            <img src="./assets/python.png">                               
+          </div>
+        </div>
+        <div class="text-container">
+          <h3>Python</h3>
+            <p>
+                This a demo experiment to skew image container. It looks good.
+            </p>
+        </div>
+    </div>
+</a> -->
