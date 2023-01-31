@@ -8,8 +8,8 @@ const swiperInfo = {
     slidesPerView: 3,
     slideGap: 60,
 }
-let windowSmall = window.matchMedia("(max-width: 480px)")
-let windowMedium = window.matchMedia("(max-width: 820px)")
+let windowSmall = window.matchMedia("(max-width: 768px)")
+let windowMedium = window.matchMedia("(max-width: 1068px)")
 
 function myFunction() {
     if (windowSmall.matches) { // If media query matches
@@ -167,19 +167,19 @@ swiperSlides.forEach(slide => {
 let intervalCounter = 0
 let intervalNextOrPrev = true
 
-setInterval(() => {
-   if (intervalNextOrPrev === true) {
-    nextSlide()
-    intervalCounter += 1
-    if (intervalCounter === bulletsArray.length - 1) {
-        intervalNextOrPrev = false
-    }
-    // console.log(intervalCounter)
-   }else if (intervalNextOrPrev === false) {
-    prevSlide()
-    intervalCounter -= 1
-    if (intervalCounter === 0) {
-        intervalNextOrPrev = true
-    }
-   }
-}, 3000)
+// setInterval(() => {
+//    if (intervalNextOrPrev === true) {
+//     nextSlide()
+//     intervalCounter += 1
+//     if (intervalCounter === bulletsArray.length - 1) {
+//         intervalNextOrPrev = false
+//     }
+//     // console.log(intervalCounter)
+//    }else if (intervalNextOrPrev === false) {
+//     prevSlide()
+//     intervalCounter -= 1
+//     if (intervalCounter === 0) {
+//         intervalNextOrPrev = true
+//     }
+//    }
+// }, 3000)

@@ -56,7 +56,7 @@
 
 @media (max-width: 542px) {
   .main-heading .heading-title hr {
-    width: 71px;
+    width: 41px;
   }
   .main-heading .heading-title p {
     font-size: 25px;
@@ -65,7 +65,7 @@
 
 @media (min-width: 543px) and (max-width: 768px) {
   .main-heading .heading-title hr {
-    width: 110px;
+    width: 85px;
   }
   .main-heading .heading-title p {
     font-size: 35px;
@@ -77,6 +77,8 @@ body {
   font-family: 'Fira Sans', sans-serif;
   margin: auto;
   overflow: auto;
+  background: -webkit-gradient(linear, left top, right top, from(white), to(#2e2f5b));
+  background: linear-gradient(to right, white 0%, #2e2f5b 100%);
   background: -webkit-gradient(linear, left top, right top, from(white), to(#00a1ff));
   background: linear-gradient(to right, white 0%, #00a1ff 100%);
   background-size: 200% 200%;
@@ -270,7 +272,7 @@ header .container .dropdown button, header .container .dropdown a {
 }
 
 header .container .dropdown button:hover, header .container .dropdown a:hover {
-  background: linear-gradient(-15deg, white -150%, #5f79fa);
+  background: #505581;
 }
 
 header .container .dropdown button .fa-solid, header .container .dropdown a .fa-solid {
@@ -284,11 +286,11 @@ header .container .dropdown button .fa-solid.open, header .container .dropdown a
 }
 
 header .container .dropdown button {
-  background: linear-gradient(-15deg, white -150%, #274bfc);
+  background: #2e2f5b;
 }
 
 header .container .dropdown button.open {
-  background: #274bfc;
+  background: #2e2f5b;
 }
 
 header .container .dropdown button #icon {
@@ -307,7 +309,7 @@ header .container .menu {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   border-top: 0;
-  background: linear-gradient(-15deg, white -150%, #274bfc);
+  background: #2e2f5b;
   translate: 0 -20px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -466,7 +468,7 @@ header .search-bar .search-result ul li a {
 }
 
 .landing-page {
-  height: 650px;
+  height: 450px;
 }
 
 .landing-page .container {
@@ -589,6 +591,9 @@ header .search-bar .search-result ul li a {
 }
 
 @media (max-width: 992px) {
+  .landing-page {
+    height: 650px;
+  }
   .landing-page .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -644,8 +649,6 @@ header .search-bar .search-result ul li a {
 }
 
 .hero-description-bk {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#3f5efb), to(#fc466b));
-  background-image: linear-gradient(0deg, #3f5efb, #fc466b);
   border-radius: 30px;
   position: absolute;
   top: 55%;
@@ -654,41 +657,16 @@ header .search-bar .search-result ul li a {
   width: 108%;
   -webkit-transform: skew(19deg, -9deg);
           transform: skew(19deg, -9deg);
-}
-
-.second .hero-description-bk {
-  background-image: linear-gradient(-20deg, #bb7413, #e7d25c);
-}
-
-.third .hero-description-bk {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#2e2f5b), to(#505581));
-  background-image: linear-gradient(0deg, #2e2f5b, #505581);
-}
-
-.fourth .hero-description-bk {
-  background-image: linear-gradient(-20deg, yellow, #ffe792);
-}
-
-.fifth .hero-description-bk {
-  background-image: linear-gradient(-30deg, #66071a, #171e42);
-}
-
-.sixth .hero-description-bk {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#00ff8f), to(#274bfc));
-  background-image: linear-gradient(0deg, #00ff8f, #274bfc);
+  background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(#00a1ff));
+  background: linear-gradient(0deg, #000000, #00a1ff);
 }
 
 .hero-logo {
   height: 70px;
   width: 70px;
-  border-radius: 20px;
-  background-color: #fff;
   position: absolute;
   bottom: 30%;
   left: 30px;
-  overflow: hidden;
-  -webkit-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
-          box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
 }
 
 .hero-logo img {
@@ -721,13 +699,6 @@ header .search-bar .search-result ul li a {
   color: #fff;
   text-transform: capitalize;
   font-size: 18px;
-}
-
-.hero-date {
-  position: absolute;
-  color: #fff;
-  left: 30px;
-  bottom: 10%;
 }
 
 .categories .container .more {
@@ -776,7 +747,7 @@ header .search-bar .search-result ul li a {
     margin: 0;
   }
   .hero-description {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
@@ -887,7 +858,7 @@ header .search-bar .search-result ul li a {
 
 .a-box {
   display: inline-block;
-  width: 240px;
+  width: 275px;
   text-align: center;
 }
 
@@ -915,14 +886,59 @@ header .search-bar .search-result ul li a {
   font-size: 14px;
 }
 
+.text-container .course-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 30px;
+}
+
+.text-container .course-details .course-video-num, .text-container .course-details .course-duration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-container .course-details .course-video-num i, .text-container .course-details .course-duration i {
+  margin-right: 5px;
+  font-size: 15px;
+  color: #2e2f5b;
+}
+
+.text-container .course-details .course-video-num p, .text-container .course-details .course-duration p {
+  font-size: 20px;
+  color: #2e2f5b;
+}
+
+.text-container .course-lecturer {
+  background-color: #ffffff6e;
+  padding: 12px 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 99px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.text-container .course-lecturer p {
+  text-transform: capitalize;
+  color: #333;
+  font-size: 17px;
+  font-weight: 600;
+}
+
 .text-container h3 {
   margin: 20px 0px 10px 0px;
   color: #2e2f5b;
   font-size: 18px;
-}
-
-.text-container p {
-  color: #2e2f5b;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 #video-player-container {
@@ -1148,5 +1164,54 @@ footer .container .down-content .copy-right p {
   footer .container .upper-content .left-content .about-info {
     width: 100%;
   }
+}
+
+#section-background {
+  background-image: url(../assets/dddepth-202.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.categories {
+  margin: 82px 0;
+}
+
+.categories .container .cards a {
+  text-decoration: none;
+}
+
+.categories .container .cards .card-details {
+  background: linear-gradient(118deg, #ffffffde 25%, #27a4fc87);
+  border-radius: 30px;
+  width: 250px;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.categories .container .cards .card-details .card-logo img {
+  width: 80px;
+}
+
+.categories .container .cards .card-details .card-name {
+  color: #2e2f5b;
+  margin-top: 15px;
+  font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */

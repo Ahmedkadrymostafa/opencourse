@@ -21,7 +21,6 @@ const handleDropdownClicked = (event) => {
     }   
   };
   
-  // document.body.addEventListener("click", () => toggleDropdown());
 // end drop down 
 
 // search result 
@@ -44,12 +43,7 @@ searchBar.addEventListener("keyup", () => {
     search.style.borderRadius = "12px"
   }
 })
-// searchBar.addEventListener("blur", () => {
-//     // searchResult.classList.remove("searching")
-//     search.style.borderRadius = "12px"
-//     searchBar.value = "";
-  
-// })
+
 
 // header responsive toggler 
 const magnify = document.querySelector(".burger-icon .fa-magnifying-glass")
@@ -79,62 +73,33 @@ caretDown.addEventListener("click", (e) => {
   
 })
 
-// search result 
-// handle cards sections 
-let more = document.getElementById("more")
-let secondSection = document.querySelector(".second-section");
-
-more.addEventListener("click", () => {
-  more.style.display = "none";
-  secondSection.classList.add("show");
-})
-// handle cards sections
-// video player handle 
-let videoList = document.querySelectorAll('.video-list-container .list');
-let iframe = document.getElementById("iframe");
-videoList.forEach(vid =>{
-   vid.onclick = () =>{
-      videoList.forEach(remove =>{remove.classList.remove('active')});
-      vid.classList.add('active');
-      iframe.src = vid.getAttribute("link");
-   };
-});  
-// video player handle   
-// wisdom area create 
-const wisdomBox = document.querySelector(".wisdom-box")
-// wisdomBox.style.width = "500px"
-// let media = window.matchMedia("(max-width: 567px)");
-// function mediaChange() {
-//   if (media.matches) {
-//     wisdomBox.style.width = "350px"
-//   }
-// }
-// window.addEventListener("resize", mediaChange(), false);
 
 
-const wisdom = document.getElementById("wisdom")
-const wisdomArray = [
-    "Lorem ipsum damet consectetur adipisicing elit. Voluptates.",
-    "Lorem ipsum dolor sit ansectetur adipisicing elit. Voluptates.",
-    "Lm ipsum dolctetur ag elit. Voluptates.",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. .",
-    "Losum dolor sit actetur adipisicing elit. Voluptates.",
-    "Lorem ipsum doet consectetur adipisicing elit. Voluptates.",
-]
-setInterval(() => {
-    
-    // let wisdomBoxWidth = wisdomBox.getBoundingClientRect().width
 
-    let randomNumber = Math.floor(Math.random() * wisdomArray.length)
-    setTimeout(() => {
-        // wisdomBox.style.width = `${wisdomBoxWidth + "px"}`
-        wisdom.innerText = wisdomArray[randomNumber]
-        wisdom.style.opacity = "1"
-    }, 1000)
-    // wisdomBox.style.width = `${(wisdomBoxWidth / 1.5) + "px"}`
-    wisdom.style.opacity = "0"
-}, 5000)
-// end wisdom area create 
+// // video player handle 
+// let videoList = document.querySelectorAll('.video-list-container .list');
+// let iframe = document.getElementById("iframe");
+// videoList.forEach(vid =>{
+//    vid.onclick = () =>{
+//       videoList.forEach(remove =>{remove.classList.remove('active')});
+//       vid.classList.add('active');
+//       iframe.src = vid.getAttribute("link");
+//    };
+// });  
+// // video player handle   
+// // wisdom area create 
+// const wisdomBox = document.querySelector(".wisdom-box")
+// // wisdomBox.style.width = "500px"
+// // let media = window.matchMedia("(max-width: 567px)");
+// // function mediaChange() {
+// //   if (media.matches) {
+// //     wisdomBox.style.width = "350px"
+// //   }
+// // }
+// // window.addEventListener("resize", mediaChange(), false);
+
+
+
 // body toggler 
 document.body.addEventListener("click", () => {
   // toggleDropdown()
