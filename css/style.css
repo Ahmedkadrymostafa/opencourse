@@ -945,51 +945,61 @@ header .search-bar .search-result ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.container .main-video-container {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 700px;
-          flex: 1 1 700px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  padding: 15px;
+  height: auto;
+  margin-top: 30px;
 }
 
 .container .main-video-container iframe {
-  width: 100%;
-  height: 100%;
+  width: 800px;
+}
+
+.container .main-video-container .video-controller {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 10px 15px;
+}
+
+.container .main-video-container .video-controller .control {
+  color: #2e2f5b;
+  margin: 0 5px;
+  background-color: #eee;
+  padding: 10px 13px;
+  border-radius: 99px;
+  cursor: pointer;
 }
 
 .container .main-video-container .main-vid-title {
   font-size: 20px;
-  color: #444;
+  color: #2e2f5b;
+  background-color: #ffffff80;
+  padding: 15px;
+  border-radius: 15px;
 }
 
 .container .video-list-container {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 350px;
-          flex: 1 1 350px;
-  height: 485px;
+  height: 595px;
   overflow-y: scroll;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 .container .video-list-container::-webkit-scrollbar {
+  display: block;
   width: 6px;
-  height: 50px;
+  height: 10px;
   background-color: rgba(0, 0, 0, 0);
 }
 
 .container .video-list-container::-webkit-scrollbar-thumb {
   background-color: #2e2f5b;
-  border-radius: 50%;
+  border-radius: 20px;
 }
 
 .container .video-list-container .list {
@@ -999,12 +1009,82 @@ header .search-bar .search-result ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 15px;
-  padding: 10px;
+  gap: 12px;
+  padding: 15px;
   background-color: #eee;
   cursor: pointer;
   border-radius: 5px;
   margin-bottom: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #2e2f5b;
+}
+
+.container .video-list-container .list .video-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.container .video-list-container .list .video-details i {
+  margin-right: 6px;
+}
+
+.container .video-list-container .list .video-details h3 {
+  font-size: 17px;
+}
+
+.container .video-list-container .list .video-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .video-list-container .list .video-info .video-duration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .video-list-container .list .video-info .video-duration i {
+  font-size: 14px;
+  margin-right: 6px;
+}
+
+.container .video-list-container .list .video-info .video-sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .video-list-container .list .video-info .video-sort i {
+  font-size: 16px;
+  margin-right: 3px;
+  font-weight: 900;
+}
+
+.container .video-list-container .list .video-info .video-duration p, .container .video-list-container .list .video-info .video-sort p {
+  font-size: 16px;
+  font-weight: 900;
 }
 
 .container .video-list-container .list:last-child {
@@ -1012,11 +1092,8 @@ header .search-bar .search-result ul li a {
 }
 
 .container .video-list-container .list.active {
-  background-color: #444;
-}
-
-.container .video-list-container .list.active .list-title {
-  color: #fff;
+  border-left: 10px solid #2e2f5b;
+  background-color: #ffffff80;
 }
 
 .container .video-list-container .list .list-video {
@@ -1024,9 +1101,23 @@ header .search-bar .search-result ul li a {
   border-radius: 5px;
 }
 
-.container .video-list-container .list .list-title {
-  font-size: 17px;
-  color: #444;
+@media (max-width: 1068px) {
+  #video-player-container {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .video-list-container {
+    margin-top: 45px;
+    padding: 0;
+  }
+  .container .main-video-container iframe {
+    width: 100%;
+  }
 }
 
 footer {

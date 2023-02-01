@@ -76,30 +76,6 @@ caretDown.addEventListener("click", (e) => {
 
 
 
-// // video player handle 
-// let videoList = document.querySelectorAll('.video-list-container .list');
-// let iframe = document.getElementById("iframe");
-// videoList.forEach(vid =>{
-//    vid.onclick = () =>{
-//       videoList.forEach(remove =>{remove.classList.remove('active')});
-//       vid.classList.add('active');
-//       iframe.src = vid.getAttribute("link");
-//    };
-// });  
-// // video player handle   
-// // wisdom area create 
-// const wisdomBox = document.querySelector(".wisdom-box")
-// // wisdomBox.style.width = "500px"
-// // let media = window.matchMedia("(max-width: 567px)");
-// // function mediaChange() {
-// //   if (media.matches) {
-// //     wisdomBox.style.width = "350px"
-// //   }
-// // }
-// // window.addEventListener("resize", mediaChange(), false);
-
-
-
 // body toggler 
 document.body.addEventListener("click", () => {
   // toggleDropdown()

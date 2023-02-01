@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="../assets/icon.png">
+   <title>Open Course</title>
+   <script src="https://kit.fontawesome.com/bfd8ea59d2.js" crossorigin="anonymous"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,900;1,300&family=Spectral:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="../css/style.css">
+</head>
+<body style="background: none; animation: none;">
+   <div id="section-background"></div>
+   <!-- start header  -->
+<header>
+   <div class="container">
+       <div class="logo">
+           <img src="../assets/newlogo.png" alt="">
+       </div>
+       <div class="btn-search-bar">
+           <div class="search-bar" id="search-bar">
+               <div class="search" id="search">
+                   <input type="text" name="search" id="search-input" placeholder="Find courses here">
+                   
+                   <label for="input">
+                       <i class="fa-solid fa-magnifying-glass"></i>
+                   </label>
+               </div>
+               
+               <div class="search-result">
+                   <ul>
+                       <li><a href="#">html course</a></li>
+                       <li><a href="#">html course</a></li>
+                       <li><a href="#">html course</a></li>
+                       <li><a href="#">html course</a></li>
+                       <li><a href="#">html course</a></li>
+                       <li><a href="#">html course</a></li>
+                       <li><a href="#">html course</a></li>
+                       <li><a href="#">html course</a></li>
+                   </ul>
+               </div>
+           </div>
+           <div class="search-dropdown" id="search-dropdown">
+               
+               <div class="dropdown" id="dropdown">
+                   <button onclick="handleDropdownClicked(event)" id="dropdown-button">
+                     categories
+                     <i id="dropdown-icon" class="fa-solid fa-caret-down"></i>
+                   </button>
+                   <div class="menu">
+                     <a href="../index.html">
+                       home
+                     </a>
+                     <a href="./pages/section.html">
+                       Programming
+                     </a>
+                     <a href="./pages/section.html">
+                       Languages
+                     </a>
+                     <a href="./pages/section.html">
+                       Design
+                     </a>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="header-icons">
+           <div class="burger-icon">
+               <i class="fa-solid fa-magnifying-glass"></i>
+           </div>
+           <div class="caret-down">
+               <i class="fa-solid fa-square-caret-down"></i>
+           </div>
+       </div>
+   </div>
+</header>
+
+<!-- end header  -->
+<!-- video player and play list  -->
+<div class="container" id="video-player-container">
+
+   <div class="main-video-container">
+      <iframe id="iframe"src="https://www.youtube.com/embed/6QAELgirvjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="video-info-content">
+         <div class="video-controller">
+            <div class="control" id="prev-control"><i class="fa-solid fa-backward"></i></div>
+            <div class="control" id="stop-control"><i class="fa-solid fa-stop"></i></div>
+            <div class="control" id="play-control"><i class="fa-solid fa-play"></i></div>
+            <div class="control" id="next-control"><i class="fa-solid fa-forward"></i></div>
+         </div>
+         <h3 class="main-vid-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam est aliquam nesciunt tenetur qui accusamus.</h3>
+      </div>
+   </div>
+
+   <div class="video-list-container">
+
+      <div class="list active" link="https://www.youtube.com/embed/6QAELgirvjs">       
+         <div class="video-details">
+            <h3 class="list-title">house flood animation Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, explicabo?</h3>
+         </div>
+         <div class="video-info">
+            <div class="video-duration">
+               <i class="fa-solid fa-clock"></i>
+               <p>00:08:00</p>
+            </div>
+            <div class="video-sort">
+               <i class="fa-solid fa-hashtag"></i>
+               <p class="video-number"></p>
+            </div>
+         </div>
+      </div>
+      <div class="list" link="https://www.youtube.com/embed/7LxA9qXUY5k">       
+         <div class="video-details">
+            <h3 class="list-title">house flood animation Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, explicabo?</h3>
+         </div>
+         <div class="video-info">
+            <div class="video-duration">
+               <i class="fa-solid fa-clock"></i>
+               <p>00:08:00</p>
+            </div>
+            <div class="video-sort">
+               <i class="fa-solid fa-hashtag"></i>
+               <p class="video-number"></p>
+            </div>
+         </div>
+      </div>
+      
+      <div class="list" link="https://www.youtube.com/embed/QG5aEmS9Fu0">       
+         <div class="video-details">
+            <h3 class="list-title">house flood animation Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, explicabo?</h3>
+         </div>
+         <div class="video-info">
+            <div class="video-duration">
+               <i class="fa-solid fa-clock"></i>
+               <p>00:08:00</p>
+            </div>
+            <div class="video-sort">
+               <i class="fa-solid fa-hashtag"></i>
+               <p class="video-number"></p>
+            </div>
+         </div>
+      </div>
+      <div class="list" link="https://www.youtube.com/embed/dVgTBEYCseU">       
+         <div class="video-details">
+            <h3 class="list-title">house flood animation Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, explicabo?</h3>
+         </div>
+         <div class="video-info">
+            <div class="video-duration">
+               <i class="fa-solid fa-clock"></i>
+               <p>00:08:00</p>
+            </div>
+            <div class="video-sort">
+               <i class="fa-solid fa-hashtag"></i>
+               <p class="video-number"></p>
+            </div>
+         </div>
+      </div>
+      <div class="list" link="https://www.youtube.com/embed/3lXuWHtm7PM">       
+         <div class="video-details">
+            <h3 class="list-title">house flood animation Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, explicabo?</h3>
+         </div>
+         <div class="video-info">
+            <div class="video-duration">
+               <i class="fa-solid fa-clock"></i>
+               <p>00:08:00</p>
+            </div>
+            <div class="video-sort">
+               <i class="fa-solid fa-hashtag"></i>
+               <p class="video-number"></p>
+            </div>
+         </div>
+      </div>
+      <div class="list" link="https://www.youtube.com/embed/sBFemL2Mfj4">       
+         <div class="video-details">
+            <h3 class="list-title">house flood animation Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, explicabo?</h3>
+         </div>
+         <div class="video-info">
+            <div class="video-duration">
+               <i class="fa-solid fa-clock"></i>
+               <p>00:08:00</p>
+            </div>
+            <div class="video-sort">
+               <i class="fa-solid fa-hashtag"></i>
+               <p class="video-number"></p>
+            </div>
+         </div>
+      </div>
+      <div class="list" link="https://www.youtube.com/embed/XxkX8wnRq3s">       
+         <div class="video-details">
+            <h3 class="list-title">house flood animation Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, explicabo?</h3>
+         </div>
+         <div class="video-info">
+            <div class="video-duration">
+               <i class="fa-solid fa-clock"></i>
+               <p>00:08:00</p>
+            </div>
+            <div class="video-sort">
+               <i class="fa-solid fa-hashtag"></i>
+               <p class="video-number"></p>
+            </div>
+         </div>
+      </div>
+      <div class="list" link="https://www.youtube.com/embed/S58smWj5Yn0">       
+         <div class="video-details">
+            <h3 class="list-title">house flood animation Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, explicabo?</h3>
+         </div>
+         <div class="video-info">
+            <div class="video-duration">
+               <i class="fa-solid fa-clock"></i>
+               <p>00:08:00</p>
+            </div>
+            <div class="video-sort">
+               <i class="fa-solid fa-hashtag"></i>
+               <p class="video-number"></p>
+            </div>
+         </div>
+      </div>
+      <div class="list" link="https://www.youtube.com/embed/Fpibp-291xQ">       
+         <div class="video-details">
+            <h3 class="list-title">house flood animation Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, explicabo?</h3>
+         </div>
+         <div class="video-info">
+            <div class="video-duration">
+               <i class="fa-solid fa-clock"></i>
+               <p>00:08:00</p>
+            </div>
+            <div class="video-sort">
+               <i class="fa-solid fa-hashtag"></i>
+               <p class="video-number"></p>
+            </div>
+         </div>
+      </div>
+      
+      
+
+      
+
+      
+
+   </div>
+
+</div>
+<!-- end video player and play list  -->
+
+<!-- start footer  -->
+<footer>
+   <div class="container">
+       <div class="upper-content">
+           <div class="left-content">
+               <!-- <div class="footer-logo">
+                   <img src="./assets/newlogo.png" alt="logo">
+               </div> -->
+               <div class="about-info">
+                   <h3>about us</h3>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima omnis, exercitationem excepturi ex fugiat expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui reprehenderit voluptatum, maiores doloribus illum saepe eius iure recusandae quaerat sint dolorem non perferendis molestiae culpa placeat voluptate voluptates adipisci. Illum!</p>
+                   <div class="short-links">
+                       <a href="#">privacy policy</a>
+                       <a href="#">terms</a>
+                   </div>
+               </div>
+           </div>
+           <div class="right-content">
+               <h3>contact us</h3>
+               <form action="">
+                   <input type="email" name="email" placeholder="Enter Your Email">
+                   <textarea name="message" id="message-area" placeholder="Type Your Messsage"></textarea>
+                   <input type="submit" id="submit" value="Send">
+               </form>
+           </div>
+       </div>
+       <div class="down-content">
+           <hr>
+           <div class="copy-right">
+               <p>&copy; all rights reserved at open course</p>
+           </div>
+       </div>
+   </div>
+</footer>
+<!-- end footer  -->
+
+
+<!-- custom js file link  -->
+<script src="../js/script.js"></script>
+<script src="../js/player.js"></script>
+
+</body>
+</html>
