@@ -8,34 +8,34 @@ const swiperInfo = {
     slidesPerView: 3,
     slideGap: 60,
 }
+
+// resize slides 
 let windowSmall = window.matchMedia("(max-width: 768px)")
 let windowMedium = window.matchMedia("(max-width: 1068px)")
 
-function myFunction() {
+function resizeSlides() {
     if (windowSmall.matches) { // If media query matches
       swiper.style.width = `${(slideWidth + swiperInfo.slideGap) * 1 + "px"}`
       swiperInfo.slidesPerView = 1
-    //   addPagination()
     } else if (windowMedium.matches){
         swiper.style.width = `${(slideWidth + swiperInfo.slideGap) * 2 + "px"}`       
         swiperInfo.slidesPerView = 2
-        // addPagination()
     }else {
         swiper.style.width = `${(slideWidth + swiperInfo.slideGap) * 3 + "px"}`       
         swiperInfo.slidesPerView = 3
     }
     
 }
-     myFunction() // Call listener function at run time
-  windowSmall.addListener(myFunction) // Attach listener function on state changes
-  windowMedium.addListener(myFunction) // Attach listener function on state changes
-  
+resizeSlides() // Call listener function at run time
+windowSmall.addListener(resizeSlides) // Attach listener function on state changes
+windowMedium.addListener(resizeSlides) // Attach listener function on state changes
+// end resize slides 
 // adding bullets in pagination div 
 function addPagination() {
     let slides = Array.from(swiperSlides).length 
     if (swiperInfo.slidesPerView === 3) {
-        slides -= 2
-    }else if (swiperInfo.slidesPerView === 2) {
+          slides -= 2
+        }else if (swiperInfo.slidesPerView === 2) {
         slides -= 1
     }     
     for (let i = 0; i < slides; i++) {
@@ -45,16 +45,17 @@ function addPagination() {
     }  
 }
 addPagination()
+
+let swiperBullet = document.querySelectorAll(".swiper-bullet")
 let firstBullet = Array.from(swiperPagination.children)[0]
 firstBullet.classList.add("swiper-slide-active")
-let swiperBullet = document.querySelectorAll(".swiper-bullet")
+  
 // create margin gap for slides 
 swiperSlides.forEach(slide => {
     slide.style.marginRight = `${swiperInfo.slideGap / 2 + "px"}`
     slide.style.marginLeft = `${swiperInfo.slideGap / 2 + "px"}`
 })
 // control swiper width 
-// swiper.style.width = `${(slideWidth + swiperInfo.slideGap)* swiperInfo.slidesPerView + "px"}`
 
 let slideTransform = slideWidth + swiperInfo.slideGap;
 let bulletsArray = Array.from(swiperPagination.children)
@@ -129,7 +130,6 @@ next.addEventListener("click", () => {
     nextSlide() 
 })
 
-
 prev.addEventListener("click", () => {
     prevSlide()
 })
@@ -167,19 +167,18 @@ swiperSlides.forEach(slide => {
 let intervalCounter = 0
 let intervalNextOrPrev = true
 
-// setInterval(() => {
-//    if (intervalNextOrPrev === true) {
-//     nextSlide()
-//     intervalCounter += 1
-//     if (intervalCounter === bulletsArray.length - 1) {
-//         intervalNextOrPrev = false
-//     }
-//     // console.log(intervalCounter)
-//    }else if (intervalNextOrPrev === false) {
-//     prevSlide()
-//     intervalCounter -= 1
-//     if (intervalCounter === 0) {
-//         intervalNextOrPrev = true
-//     }
-//    }
-// }, 3000)
+setInterval(() => {
+    if (intervalNextOrPrev === true) {
+        nextSlide()
+        intervalCounter += 1
+        if (intervalCounter === bulletsArray.length - 1) {
+            intervalNextOrPrev = false
+        }
+    }else if (intervalNextOrPrev === false) {
+        prevSlide()
+        intervalCounter -= 1
+    if (intervalCounter === 0) {
+        intervalNextOrPrev = true
+    }
+}
+}, 3000)
