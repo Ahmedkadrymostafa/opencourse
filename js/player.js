@@ -89,6 +89,9 @@ fetchData(`https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&
                             if (pageToken !== undefined) { 
                                 getNextPage();
                             }
+                            if (pageToken === undefined) {
+                                setActive();
+                            }
                         }
                     }
                     
@@ -97,10 +100,6 @@ fetchData(`https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&
         if (pageToken !== undefined) {
             loadBtn.addEventListener('click', () => {              
                 getNextPage()
-                
-                setTimeout(() => {
-                    setActive();
-                }, 1000)
                 loadBtn.style.display = 'none';
             })
         }
